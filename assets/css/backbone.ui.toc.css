@@ -1,0 +1,8 @@
+.ui-template .ui-template-target {
+  background-color: red;
+  padding: 50px;
+  display: none;
+}
+.ui-template .ui-element-active {
+  display: block;
+}
