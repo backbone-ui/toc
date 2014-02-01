@@ -18,7 +18,7 @@
 		el : function() { return this.options.element },
 		
 		options : {
-			element : '.content',
+			element : '.main',
 			titleEl : "h2"
 			// scroll : true,
 			// className : "",
@@ -36,6 +36,8 @@
 
 		initialize: function(options){
 			_.bindAll(this, 'render', 'displayTOC');
+			
+			$(this.el).addClass("ui-toc");
 
 			return View.prototype.initialize.call(this, options);
 
